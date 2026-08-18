@@ -1,4 +1,19 @@
 body{
+ .monografia-grid {
+  display: grid;
+  /* Crea columnas automáticas de mínimo 150px y máximo 1fr */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  /* Define el espacio de separación entre las imágenes */
+  gap: 15px; 
+  padding: 15px;
+}
 
+.monografia-grid img {
+  width: 100%;
+  height: 150px; /* Altura fija para que todas se vean uniformes */
+  object-fit: cover; /* Recorta la imagen sin deformarla */
+  border: 1px solid #ccc; /* Simula el borde de recuadro escolar */
+  border-radius: 4px;
+}
     
 }
